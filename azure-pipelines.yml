@@ -37,12 +37,12 @@ steps:
    echo "Committing all CDS solution changes"
    git config user.email "nepasrepondre-noreply@tc.gc.ca"
    git config user.name "tc-buildbot"
-   git checkout main
+   git checkout development
    git add --all
    git commit -m "Update Solution - $env:SOLUTIONNAME: $env:COMMITMESSAGE"
    
    echo "Push solution changes to the remote repository"
-   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin main
+   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin development
 
 - task: PowerPlatformExportSolution@0
   inputs:
