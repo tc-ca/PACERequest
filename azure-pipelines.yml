@@ -47,7 +47,7 @@ steps:
 - task: PowerPlatformExportSolution@0
   inputs:
     authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'HRCMS development'
+    PowerPlatformSPN: 'PACE Request Dev'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
     Managed: true
