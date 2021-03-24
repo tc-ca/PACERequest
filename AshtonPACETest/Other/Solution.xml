@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.21032.133" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>AshtonPACETest</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="PACE Request App" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.28</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>ashtonpacetest</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Ashton Pace Test" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>apt</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>92121</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="apt_environments" behavior="0" />
+      <RootComponent type="1" schemaName="apt_inventory" behavior="0" />
+      <RootComponent type="1" schemaName="apt_licensetype" behavior="0" />
+      <RootComponent type="1" schemaName="apt_request" behavior="0" />
+      <RootComponent type="1" schemaName="apt_requestorprogram" behavior="0" />
+      <RootComponent type="1" schemaName="apt_requesttype" behavior="0" />
+      <RootComponent type="1" schemaName="new_userrequestprocess" behavior="0" />
+      <RootComponent type="9" schemaName="apt_justificationchoice" behavior="0" />
+      <RootComponent type="9" schemaName="apt_statusofrequest" behavior="0" />
+      <RootComponent type="29" id="{019df2b6-7777-eb11-a812-000d3af3d106}" behavior="0" />
+      <RootComponent type="29" id="{371dc9f9-ef6a-eb11-a812-000d3a84106a}" behavior="0" />
+      <RootComponent type="29" id="{568a5ea2-9b77-eb11-a812-000d3af3d106}" behavior="0" />
+      <RootComponent type="29" id="{56ea0c88-3c28-eb11-a813-000d3a0c8127}" behavior="0" />
+      <RootComponent type="29" id="{ad81bd96-ca30-4494-91b0-e7cb30629734}" behavior="0" />
+      <RootComponent type="60" id="{392ecc54-29ea-42b2-9681-c8d5c2d40238}" behavior="0" />
+      <RootComponent type="60" id="{8afb48cd-f745-eb11-a812-000d3a0c8127}" behavior="0" />
+      <RootComponent type="60" id="{d6ecc95d-4564-4a72-9864-f8f3b2f353cb}" behavior="0" />
+      <RootComponent type="60" id="{e7b6fd9f-ff90-4a7b-bd45-a912a346e107}" behavior="0" />
+      <RootComponent type="62" schemaName="apt_AshtonPACETest" behavior="0" />
+      <RootComponent type="80" schemaName="apt_AshtonPACETest" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="1" type="80" schemaName="apt_AshtonPACETest" displayName="PACE Request App" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
