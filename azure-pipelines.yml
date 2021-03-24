@@ -37,7 +37,7 @@ steps:
    echo "Committing all CDS solution changes"
    git config user.email "nepasrepondre-noreply@tc.gc.ca"
    git config user.name "tc-buildbot"
-   git checkout development
+   git checkout main
    git add --all
    git commit -m "Update Solution - $env:SOLUTIONNAME: $env:COMMITMESSAGE"
    
