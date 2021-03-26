@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d6ecc95d-4564-4a72-9864-f8f3b2f353cb}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab id="{3b6038b9-0192-42d1-9690-191324cb6cc4}" IsUserDefined="1" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{92a3cb22-fb3a-4ebf-8dd2-57576370072e}" IsUserDefined="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{85133988-1099-4ed9-8e96-fc1586cd054e}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="apt_name" datafieldname="apt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fecafef7-5dab-470b-8af1-0f0f2a0c6c30}" locklevel="0">
+                        <labels>
+                          <label description="Requestor Program" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_requestorprogram" datafieldname="apt_requestorprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f63f98c1-7bfc-49d5-9274-80029b215f40}" locklevel="0">
+                        <labels>
+                          <label description="Type of request" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_typeofrequest" datafieldname="apt_typeofrequest" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{56424854-db17-c55a-a693-6116bd4aa54e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25ce3a7f-2ba6-44dd-ab3e-af0fcf075b69}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type of license request" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_typeoflicenserequest" datafieldname="apt_typeoflicenserequest" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{2e443439-6b25-8e6c-2794-78dabd9d25ba}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{685B7EA3-29F6-4392-B4C3-15DCF8BFAFC4}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fcdf210f-369c-4cff-a9c7-eed26a302db0}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Number of Licenses" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_numberoflicenses" datafieldname="apt_numberoflicenses" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{84409694-0e99-d799-05b4-e8a8b6bd5ca9}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{56554b91-a7ae-45d5-ba73-7e52a1b4f973}" locklevel="0">
+                        <labels>
+                          <label description="Number of Licenses" languagecode="1033" />
+                        </labels>
+                        <control id="apt_numberoflicenses" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_numberoflicenses" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75605b17-a22b-3bcc-346a-46e68ba48604}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name of the assignee" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_nameoftheassignee" datafieldname="apt_nameoftheassignee" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" uniqueid="{69236710-bedb-3dc3-87a6-beab4c1a9ed8}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{527c11a6-16f4-46c8-bb3a-1607a292ba53}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Combined Storage" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_combinedstorage" datafieldname="apt_combinedstorage" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{6194431d-0b33-955a-0451-65ca2155722e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a18130e4-b235-410a-895c-6fad8f118787}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of environments" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_numberofenvironments" datafieldname="apt_numberofenvironments" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{03bc778c-e69b-d719-53d3-30b100a94be0}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{010d6a08-0143-4798-b54e-df58f982aa5c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name of environments" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_nameofenvironments" datafieldname="apt_nameofenvironments" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{4d025800-ed72-db5d-c116-7164ad28d5a3}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0977262c-5169-4da8-9da8-8c9722631e61}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total space (GB)" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_totalspacegb" datafieldname="apt_totalspacegb" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{50318240-6294-8d5a-6aed-ac175e9989c2}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e9158a23-4ca3-4439-8d9d-f146953ccab6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project information" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_projectinformation" datafieldname="apt_projectinformation" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{8a27ee65-dac7-553b-cd86-036d2599ced6}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93974521-0197-4a1d-bec4-2c19e1a3cdf9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Training inquiry" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_traininginquiry" datafieldname="apt_traininginquiry" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{3775ecc0-2205-86c2-1c5c-569a2992cc6b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f290a6a9-b631-4110-92c1-9c16bdc6d28d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Purchase request" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="apt_purchaserequest" datafieldname="apt_purchaserequest" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" uniqueid="{7e1077bb-0382-2999-5c1d-850455989c47}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{dc2fea4c-f843-4e9a-a20d-9aa0d425266e}" columns="111" celllabelalignment="Left" labelwidth="115" celllabelposition="Top">
+        <rows>
+          <row>
+            <cell id="{73c48468-db17-4200-8b0e-c9fbc4b2c074}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1baea353-d523-4f53-a887-972948fb6513}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6a65515f-2349-456b-8ef0-0079a924f87a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3c360f66-e87b-4353-b211-d58a3f3208ff}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a02e8ee9-9c47-4028-b192-8890e88dbe3c}" columns="111" celllabelalignment="Left" labelwidth="115" celllabelposition="Top">
+        <rows>
+          <row>
+            <cell id="{3a8c65cc-a3c8-4619-af16-f9b615c172af}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{22271b99-a1c9-45df-9fa6-7ceb1b9c0cac}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a943e7b6-9f0c-4760-9f61-2a0ffc9fcf60}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
