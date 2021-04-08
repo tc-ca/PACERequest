@@ -14,7 +14,7 @@
           <columns>
             <column width="100%">
               <sections>
-                <section id="{e85467bf-c3e2-453f-abcf-1d56f421046b}" IsUserDefined="0" showlabel="false" showbar="false">
+                <section id="{e85467bf-c3e2-453f-abcf-1d56f421046b}" IsUserDefined="0" showlabel="false" showbar="false" visible="true">
                   <labels>
                     <label description="General" languagecode="1033" />
                   </labels>
@@ -141,6 +141,14 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{348cf269-7b1a-47fe-8902-0aff9d36cd87}" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name of deleted license user" languagecode="1033" />
+                        </labels>
+                        <control id="apt_nameofdeletedlicenseuser" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_nameofdeletedlicenseuser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{78692745-c163-45b8-8854-c3b28b6024b6}" locklevel="0">
                         <labels>
                           <label description="Created On" languagecode="1033" />
@@ -251,7 +259,7 @@
         </rows>
       </footer>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
