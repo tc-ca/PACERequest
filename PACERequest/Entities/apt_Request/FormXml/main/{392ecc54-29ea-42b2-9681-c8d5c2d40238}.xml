@@ -141,11 +141,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{348cf269-7b1a-47fe-8902-0aff9d36cd87}" locklevel="0" visible="false">
+                      <cell id="{348cf269-7b1a-47fe-8902-0aff9d36cd87}" locklevel="0" showlabel="true" visible="false">
                         <labels>
                           <label description="Name of deleted license user" languagecode="1033" />
                         </labels>
-                        <control id="apt_nameofdeletedlicenseuser" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_nameofdeletedlicenseuser" disabled="false" />
+                        <control id="apt_nameofdeletedlicenseuser" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_nameofdeletedlicenseuser" disabled="false" uniqueid="{406c2db4-db3e-b9db-1b50-ce1933b9902b}" />
                       </cell>
                     </row>
                     <row>
@@ -259,7 +259,7 @@
         </rows>
       </footer>
       <Navigation>
-        <NavBar />
+        <NavBar></NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
