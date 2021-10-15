@@ -6,6 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Justification choice" languagecode="1033" />
+    <displayname description="Choix de la justification" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -14,21 +15,25 @@
     <option value="921210000">
       <labels>
         <label description="Developer level activities" languagecode="1033" />
+        <label description="Activités de niveau développeur" languagecode="1036" />
       </labels>
     </option>
     <option value="921210001">
       <labels>
         <label description="Project Service Automation" languagecode="1033" />
+        <label description="Automatisation des services de projets" languagecode="1036" />
       </labels>
     </option>
     <option value="921210002">
       <labels>
         <label description="Field Service" languagecode="1033" />
+        <label description="Field Service" languagecode="1036" />
       </labels>
     </option>
     <option value="921210003">
       <labels>
         <label description="Customer Service Enterprise" languagecode="1033" />
+        <label description="Service aux clients - Entreprise" languagecode="1036" />
       </labels>
     </option>
   </options>

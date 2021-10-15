@@ -22,9 +22,11 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="My Request Types" languagecode="1033" />
+      <LocalizedName description="Mes types de demandes" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="Active Request Types owned by me" languagecode="1033" />
+      <Description description="Types de demandes actives dont je suis propriétaire" languagecode="1036" />
     </Descriptions>
   </savedquery>
 </savedqueries>

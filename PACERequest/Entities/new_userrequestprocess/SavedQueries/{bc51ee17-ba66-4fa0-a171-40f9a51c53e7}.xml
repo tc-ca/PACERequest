@@ -39,6 +39,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="User Request Process Lookup View" languagecode="1033" />
+      <LocalizedName description="Vue de consultation des processus de demande d'utilisateur" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

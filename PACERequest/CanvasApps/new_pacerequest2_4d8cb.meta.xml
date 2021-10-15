@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>new_pacerequest2_4d8cb</Name>
+  <AppVersion>2021-09-22T18:09:57Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.21092.24.0</CreatedByClientVersion>
+  <MinClientVersion>3.21092.24.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","sienaVersion":"695f1db9-72cb-4dd5-877d-c7bd74fee192","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"false","primaryFormFactor":"Phone","publisherVersion":"3.21092.24","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(253, 193, 2, 1)</BackgroundColor>
+  <DisplayName>Power Apps Centre of Excellence Request Form</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"85e62d6a-3d4b-4adf-b0a4-ed4d7699ad5a":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1510/1.0.1510.2537/office365users/icon.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["MyProfileV2","SearchUser"]},"1331fabf-58e4-4f47-9be8-a6fa2eeec853":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1516/1.0.1516.2558/office365/icon.png","dataSources":["Office365Outlook"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["SendEmailV2"]}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified"}},"dataSources":{"Requestor Programs":{"entitySetName":"apt_requestorprograms","logicalName":"apt_requestorprogram"},"Requests":{"entitySetName":"apt_requests","logicalName":"apt_request"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Request Types":{"entitySetName":"apt_requesttypes","logicalName":"apt_requesttype"},"License types":{"entitySetName":"apt_licensetypes","logicalName":"apt_licensetype"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"apt_requestorprogram","componenttype":1},{"logicalname":"apt_request","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"apt_requesttype","componenttype":1},{"logicalname":"apt_licensetype","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/new_pacerequest2_4d8cb_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/new_pacerequest2_4d8cb_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

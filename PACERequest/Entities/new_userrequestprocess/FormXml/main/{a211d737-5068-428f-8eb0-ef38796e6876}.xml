@@ -10,6 +10,7 @@
         <tab verticallayout="true" id="{23495beb-0b73-4635-ad2b-cc159a30cd2a}" name="StageStep4" locklevel="0" expanded="true" visible="false" labelid="{5109c769-dd5f-42f2-9057-ce98df5d02e5}">
           <labels>
             <label description="Request" languagecode="1033" />
+            <label description="Demande" languagecode="1036" />
           </labels>
           <columns>
             <column width="100%">
@@ -17,22 +18,25 @@
                 <section showbar="false" columns="1" id="{2e4834b4-8339-a8a3-e297-38b69fc8abc9}" name="StageStep4_section1" labelid="{45a6ca37-4645-4922-a2b1-d6ffdacf1c3e}">
                   <labels>
                     <label description="Request" languagecode="1033" />
+                    <label description="Demande" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{02ab16f7-1e32-44d4-8e75-5633065c9a58}" showlabel="true" visible="true" labelid="{5f551b9e-15f2-4a6d-a584-6baf9447a061}">
                         <labels>
                           <label description="Verify details" languagecode="1033" />
+                          <label description="Vérifier les détails" languagecode="1036" />
                         </labels>
-                        <control id="bpf_apt_request_new_userrequestprocess:apt_detailverification" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="apt_detailverification" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" disabled="false" />
+                        <control id="bpf_apt_request_new_userrequestprocess:apt_detailverification" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="apt_detailverification" disabled="false" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" />
                       </cell>
                     </row>
                     <row>
                       <cell id="{54b0408e-3fa5-47d9-a52b-567bea333623}" showlabel="true" visible="true" labelid="{2e2a1a66-5e91-433b-bdc3-6c891641f98e}">
                         <labels>
                           <label description="Change status to in progress" languagecode="1033" />
+                          <label description="Modifier l'état à En cours" languagecode="1036" />
                         </labels>
-                        <control id="bpf_apt_request_new_userrequestprocess:apt_statusofrequest" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="apt_statusofrequest" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" disabled="false" />
+                        <control id="bpf_apt_request_new_userrequestprocess:apt_requeststatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="apt_requeststatus" disabled="false" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" />
                       </cell>
                     </row>
                   </rows>
@@ -44,6 +48,7 @@
         <tab verticallayout="true" id="{517b4b25-1eb5-48c2-a4b5-edd287a9b2a6}" name="StageStep10" locklevel="0" expanded="true" visible="false" labelid="{37823a56-a886-4377-83be-3206da089c03}">
           <labels>
             <label description="Action" languagecode="1033" />
+            <label description="Mesure" languagecode="1036" />
           </labels>
           <columns>
             <column width="100%">
@@ -51,14 +56,16 @@
                 <section showbar="false" columns="1" id="{902fdef1-624d-ccc4-ea6a-7b34daa993a8}" name="StageStep10_section1" labelid="{98716119-208f-45c1-a0a2-8ed7b8a6f72b}">
                   <labels>
                     <label description="Action" languagecode="1033" />
+                    <label description="Mesure" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{821c7c33-ff10-4553-a28f-0453ffd8e6a1}" showlabel="true" visible="true" labelid="{6770821b-907e-483c-8d54-4d8d84e5f2d9}">
                         <labels>
                           <label description="Item actioned" languagecode="1033" />
+                          <label description="Mesure prise" languagecode="1036" />
                         </labels>
-                        <control id="bpf_apt_request_new_userrequestprocess:apt_itemactioned" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="apt_itemactioned" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" disabled="false" />
+                        <control id="bpf_apt_request_new_userrequestprocess:apt_itemactioned" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="apt_itemactioned" disabled="false" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" />
                       </cell>
                     </row>
                   </rows>
@@ -70,6 +77,7 @@
         <tab verticallayout="true" id="{a8471401-23bb-4c28-b63f-de33dc004df7}" name="StageStep14" locklevel="0" expanded="true" visible="false" labelid="{935f8cef-2ee4-4729-b88d-8100ef6c4f30}">
           <labels>
             <label description="Completed" languagecode="1033" />
+            <label description="Terminé" languagecode="1036" />
           </labels>
           <columns>
             <column width="100%">
@@ -77,22 +85,25 @@
                 <section showbar="false" columns="1" id="{132b9e1b-66c5-c49d-ad78-13a7df2be7a7}" name="StageStep14_section1" labelid="{f6eaf5f5-0f33-4579-a72b-53ffb96eac31}">
                   <labels>
                     <label description="Completed" languagecode="1033" />
+                    <label description="Terminé" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{66593e0b-e411-4b71-841a-0fc0255c3c3f}" showlabel="true" visible="true" labelid="{2c75660a-ef05-4b53-8aae-c40b8bc5a096}">
                         <labels>
                           <label description="Completed" languagecode="1033" />
+                          <label description="Terminé" languagecode="1036" />
                         </labels>
-                        <control id="bpf_apt_request_new_userrequestprocess:apt_requestcomplete" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="apt_requestcomplete" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" disabled="false" />
+                        <control id="bpf_apt_request_new_userrequestprocess:apt_requestcomplete" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="apt_requestcomplete" disabled="false" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" />
                       </cell>
                     </row>
                     <row>
                       <cell id="{654b7aad-32b8-478a-9c5f-d2cb067dcac0}" showlabel="true" visible="true" labelid="{b8c342bd-7c98-4283-8add-06a64a1d620d}">
                         <labels>
                           <label description="Change status to complete" languagecode="1033" />
+                          <label description="Modifier l'état à Terminé" languagecode="1036" />
                         </labels>
-                        <control id="bpf_apt_request_new_userrequestprocess:apt_statusofrequest" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="apt_statusofrequest" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" disabled="false" />
+                        <control id="bpf_apt_request_new_userrequestprocess:apt_requeststatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="apt_requeststatus" disabled="false" relationship="bpf_apt_request_new_userrequestprocess" isrequired="true" />
                       </cell>
                     </row>
                   </rows>
@@ -104,6 +115,7 @@
         <tab verticallayout="true" id="{f7f3a844-2ec1-41ed-b5e9-b6dd5a69c4f6}" name="StageStep20" locklevel="0" expanded="true" visible="false" labelid="{ec5240ea-676e-4108-95a5-d7e97cc74336}">
           <labels>
             <label description="Inventory" languagecode="1033" />
+            <label description="Inventaire" languagecode="1036" />
           </labels>
           <columns>
             <column width="100%">
@@ -111,14 +123,16 @@
                 <section showbar="false" columns="1" id="{fa973d3e-f73b-026c-5194-13649b00aa44}" name="StageStep20_section1" labelid="{b8b023f1-5058-4f18-bc1e-a04ecf38dcac}">
                   <labels>
                     <label description="Inventory" languagecode="1033" />
+                    <label description="Inventaire" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{abf94b64-48f4-43a9-a2f3-26937bf02964}" showlabel="true" visible="true" labelid="{e10083f1-1812-4ec8-9495-764ea58990dc}">
                         <labels>
                           <label description="Number of Licenses" languagecode="1033" />
+                          <label description="Nombre de licences" languagecode="1036" />
                         </labels>
-                        <control id="bpf_apt_inventory_new_userrequestprocess:apt_numberoflicenses" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="apt_numberoflicenses" relationship="bpf_apt_inventory_new_userrequestprocess" isrequired="false" disabled="false" />
+                        <control id="bpf_apt_inventory_new_userrequestprocess:apt_numberoflicenses" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="apt_numberoflicenses" disabled="false" relationship="bpf_apt_inventory_new_userrequestprocess" isrequired="false" />
                       </cell>
                     </row>
                   </rows>
@@ -133,9 +147,11 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A form for this entity." languagecode="1033" />
+      <Description description="Un formulaire pour cette entité." languagecode="1036" />
     </Descriptions>
   </systemform>
 </forms>

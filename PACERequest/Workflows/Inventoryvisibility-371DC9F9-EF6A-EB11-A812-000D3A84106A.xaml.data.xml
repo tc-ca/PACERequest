@@ -11,16 +11,15 @@
   <TriggerOnDelete>0</TriggerOnDelete>
   <AsyncAutodelete>0</AsyncAutodelete>
   <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-  <StateCode>1</StateCode>
-  <StatusCode>2</StatusCode>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
   <RunAs>1</RunAs>
   <IsTransacted>1</IsTransacted>
   <IntroducedVersion>1.0.0.13</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-  <ProcessTriggerFormId>{d6ecc95d-4564-4a72-9864-f8f3b2f353cb}</ProcessTriggerFormId>
-  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>apt_Inventory</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Inventory visibility" />

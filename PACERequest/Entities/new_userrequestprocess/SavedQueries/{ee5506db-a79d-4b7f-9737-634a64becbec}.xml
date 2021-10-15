@@ -47,6 +47,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Inactive User Request Process on my Requests" languagecode="1033" />
+      <LocalizedName description="Processus de demande d'utilisateur inactif dans mes demandes" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

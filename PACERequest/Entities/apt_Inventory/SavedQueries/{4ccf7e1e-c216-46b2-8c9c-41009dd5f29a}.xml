@@ -36,6 +36,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active Inventories" languagecode="1033" />
+      <LocalizedName description="Inventaires actifs" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

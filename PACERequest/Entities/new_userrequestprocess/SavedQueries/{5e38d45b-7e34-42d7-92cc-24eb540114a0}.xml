@@ -40,6 +40,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="All User Request Process" languagecode="1033" />
+      <LocalizedName description="Processus de demande d'utilisateur - Tout" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

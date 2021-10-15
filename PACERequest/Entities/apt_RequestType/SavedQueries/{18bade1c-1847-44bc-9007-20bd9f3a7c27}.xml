@@ -29,6 +29,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Request Type Advanced Find View" languagecode="1033" />
+      <LocalizedName description="Vue de recherche avancée des types de demandes" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

@@ -10,7 +10,8 @@
     <layoutxml>
       <grid name="resultset" jump="apt_name" select="1" icon="1" preview="1">
         <row name="result" id="apt_requesttypeid">
-          <cell name="apt_name" width="300" />
+          <cell name="apt_name" width="188" />
+          <cell name="apt_name_fr" width="167" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -26,12 +27,14 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="apt_name_fr" />
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active Request Types" languagecode="1033" />
+      <LocalizedName description="Types de demandes actives" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

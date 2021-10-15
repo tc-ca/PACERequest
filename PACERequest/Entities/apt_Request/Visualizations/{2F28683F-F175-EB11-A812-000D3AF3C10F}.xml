@@ -43,6 +43,7 @@
   <isdefault>0</isdefault>
   <LocalizedNames>
     <LocalizedName description="Request type" languagecode="1033" />
+    <LocalizedName description="Type de demande" languagecode="1036" />
   </LocalizedNames>
   <IsCustomizable>1</IsCustomizable>
   <IntroducedVersion>1.0.0.14</IntroducedVersion>

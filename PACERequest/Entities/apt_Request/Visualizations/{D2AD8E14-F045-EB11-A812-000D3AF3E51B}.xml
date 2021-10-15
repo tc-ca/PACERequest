@@ -6,7 +6,7 @@
       <fetchcollection>
         <fetch aggregate="true" mapping="logical">
           <entity name="apt_request">
-            <attribute name="apt_statusofrequest" alias="_CRMAutoGen_groupby_column_Num_0" groupby="true" />
+            <attribute name="apt_requeststatus" alias="_CRMAutoGen_groupby_column_Num_0" groupby="true" />
             <attribute name="apt_typeofrequest" aggregate="count" alias="_CRMAutoGen_aggregate_column_Num_0" />
           </entity>
         </fetch>
@@ -43,9 +43,11 @@
   <isdefault>0</isdefault>
   <LocalizedNames>
     <LocalizedName description="Completed requests" languagecode="1033" />
+    <LocalizedName description="Demandes terminées" languagecode="1036" />
   </LocalizedNames>
   <Descriptions>
     <Description description="The chart compares the number of requests made, and their current status." languagecode="1033" />
+    <Description description="Le graphique compare le nombre de demandes effectuées et leur état actuel." languagecode="1036" />
   </Descriptions>
   <IsCustomizable>1</IsCustomizable>
   <IntroducedVersion>1.0.0.0</IntroducedVersion>

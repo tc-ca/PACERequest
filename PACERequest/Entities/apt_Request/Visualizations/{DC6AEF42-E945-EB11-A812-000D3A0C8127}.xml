@@ -47,9 +47,11 @@
   <isdefault>0</isdefault>
   <LocalizedNames>
     <LocalizedName description="Number of requests by team" languagecode="1033" />
+    <LocalizedName description="Nombre de demandes par équipe" languagecode="1036" />
   </LocalizedNames>
   <Descriptions>
     <Description description="This chart shows the number of requests being made by each team" languagecode="1033" />
+    <Description description="Ce graphique présente le nombre de demandes effectuées par équipe" languagecode="1036" />
   </Descriptions>
   <IsCustomizable>1</IsCustomizable>
   <IntroducedVersion>1.0.0.0</IntroducedVersion>

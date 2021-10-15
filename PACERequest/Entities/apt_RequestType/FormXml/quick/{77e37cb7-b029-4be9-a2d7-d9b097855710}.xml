@@ -17,12 +17,14 @@
                 <section showlabel="false" showbar="false" IsUserDefined="0" id="{6c1ff415-ac4d-40f8-a2b9-c8882648fd00}">
                   <labels>
                     <label description="GENERAL" languagecode="1033" />
+                    <label description="Généralités" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{b5a5a2c5-abcf-4658-b2ff-fdb97524c46c}">
                         <labels>
                           <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
                         </labels>
                         <control id="apt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="apt_name" />
                       </cell>
@@ -31,6 +33,7 @@
                       <cell id="{be52e130-74af-487c-a08a-d855a864497c}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
@@ -47,6 +50,7 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information" languagecode="1036" />
     </LocalizedNames>
   </systemform>
 </forms>

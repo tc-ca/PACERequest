@@ -22,9 +22,11 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="My Requestor Programs" languagecode="1033" />
+      <LocalizedName description="Mes programmes de demandeurs" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="Active Requestor Programs owned by me" languagecode="1033" />
+      <Description description="Programmes de demandeurs actifs dont je suis propriétaire" languagecode="1036" />
     </Descriptions>
   </savedquery>
 </savedqueries>

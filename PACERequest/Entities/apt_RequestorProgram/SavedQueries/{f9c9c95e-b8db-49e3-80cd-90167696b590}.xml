@@ -32,6 +32,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Requestor Program Associated View" languagecode="1033" />
+      <LocalizedName description="Vue associée des programmes de demandeurs" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

@@ -13,7 +13,7 @@
           <cell name="apt_name" width="300" />
           <cell name="apt_requestorprogram" width="100" />
           <cell name="apt_typeofrequest" width="160" />
-          <cell name="apt_statusofrequest" width="100" />
+          <cell name="apt_requeststatus" width="100" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -30,14 +30,15 @@
           </filter>
           <attribute name="apt_typeofrequest" />
           <order descending="true" attribute="createdon" />
-          <attribute name="apt_statusofrequest" />
           <attribute name="apt_requestorprogram" />
+          <attribute name="apt_requeststatus" />
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active Requests" languagecode="1033" />
+      <LocalizedName description="Demandes actives" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

@@ -2,6 +2,7 @@
 <Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LocalizedNames>
     <LocalizedName description="PACE Statistics" languagecode="1033" />
+    <LocalizedName description="Statistiques PACE" languagecode="1036" />
   </LocalizedNames>
   <FormId>{8afb48cd-f745-eb11-a812-000d3a0c8127}</FormId>
   <IsCustomizable>1</IsCustomizable>
@@ -13,6 +14,7 @@
           <tab id="{7acacb64-1696-49c9-8b68-5c08bf6b6e56}" showlabel="false" verticallayout="true">
             <labels>
               <label description="Tab" languagecode="1033" />
+              <label description="Onglet" languagecode="1036" />
             </labels>
             <columns>
               <column width="100%">
@@ -20,12 +22,14 @@
                   <section id="{100e9fb3-67e6-4ccf-905b-29e1f560cd35}" showlabel="false" showbar="false" columns="1111">
                     <labels>
                       <label description="Section" languagecode="1033" />
+                      <label description="Section" languagecode="1036" />
                     </labels>
                     <rows>
                       <row>
                         <cell id="{7c87e9dc-fc12-46e8-8d55-3f210432be52}" rowspan="12" showlabel="false" auto="false" colspan="2">
                           <labels>
                             <label description="Request" languagecode="1033" />
+                            <label description="Demande" languagecode="1036" />
                           </labels>
                           <control id="Componentb040373" indicationOfSubgrid="true" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{140429a7-6e47-168e-d429-d67112d358c8}">
                             <parameters>
@@ -50,6 +54,7 @@
                         <cell id="{4668b6ae-2e68-de35-dbad-2b587e49b470}" showlabel="false" colspan="2" auto="false" rowspan="12">
                           <labels>
                             <label description="Request" languagecode="1033" />
+                            <label description="Demande" languagecode="1036" />
                           </labels>
                           <control id="Component8983967" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{5ca75e23-6ec0-9d40-cedc-9443c266c7d0}">
                             <parameters>
@@ -87,6 +92,7 @@
                         <cell id="{c8be2a6e-8b89-4b35-95c9-9bc2e7683cb5}" rowspan="12" showlabel="false" auto="false" colspan="2">
                           <labels>
                             <label description="Request" languagecode="1033" />
+                            <label description="Demande" languagecode="1036" />
                           </labels>
                           <control id="Component66a1ab4" indicationOfSubgrid="true" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{8096e89c-aba1-dcab-6504-c02378a054aa}">
                             <parameters>
@@ -111,6 +117,7 @@
                         <cell id="{a779cd22-aa10-48f8-821d-b66ac9b5e455}" rowspan="12" showlabel="false" auto="false" colspan="2">
                           <labels>
                             <label description="Requests" languagecode="1033" />
+                            <label description="Demandes" languagecode="1036" />
                           </labels>
                           <control id="Componentacb500c" indicationOfSubgrid="true" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{44642a3c-0dbb-a9bd-a16c-8a07d2e50c29}">
                             <parameters>

@@ -47,9 +47,11 @@
   <isdefault>0</isdefault>
   <LocalizedNames>
     <LocalizedName description="Type of Request by Type of license assignment" languagecode="1033" />
+    <LocalizedName description="Type de demande par type d'attribution de licence" languagecode="1036" />
   </LocalizedNames>
   <Descriptions>
     <Description description="How many requests are FPC" languagecode="1033" />
+    <Description description="Nombre de demandes de type FPC" languagecode="1036" />
   </Descriptions>
   <IsCustomizable>1</IsCustomizable>
   <IntroducedVersion>1.0.0.4</IntroducedVersion>

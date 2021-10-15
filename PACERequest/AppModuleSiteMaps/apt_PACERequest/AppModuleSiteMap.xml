@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SiteMapUniqueName>apt_PACERequest</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
   <SiteMap IntroducedVersion="7.0.0.0">
     <Area Id="NewArea_77071012" ResourceId="SitemapDesigner.NewArea" ShowGroups="false">
       <Titles>
@@ -16,9 +20,18 @@
         <SubArea Id="NewSubArea_84b83ab4" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="apt_environments" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
         <SubArea Id="NewSubArea_8e817f14" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="systemuser" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
       </Group>
+      <Group Id="NewGroup_82de3373" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Reference Tables" />
+        </Titles>
+        <SubArea Id="NewSubArea_844ed06" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="apt_requesttype" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_611ab4ce" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="apt_requestorprogram" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubArea_0c5ad2ee" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="apt_licensetype" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
     </Area>
   </SiteMap>
   <LocalizedNames>
-    <LocalizedName description="PACE Request" languagecode="1033" />
+    <LocalizedName description="PACE Request App" languagecode="1033" />
+    <LocalizedName description="App de demande PACE" languagecode="1036" />
   </LocalizedNames>
 </AppModuleSiteMap>

@@ -40,6 +40,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active User Request Process" languagecode="1033" />
+      <LocalizedName description="Processus de demande d'utilisateur actif" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

@@ -19,6 +19,7 @@
     <AppModuleComponent type="1" schemaName="knowledgearticle" />
     <AppModuleComponent type="1" schemaName="mailbox" />
     <AppModuleComponent type="1" schemaName="apt_request" />
+    <AppModuleComponent type="1" schemaName="apt_requesttype" />
     <AppModuleComponent type="1" schemaName="systemuser" />
     <AppModuleComponent type="1" schemaName="new_userrequestprocess" />
   </AppModuleComponents>
@@ -28,5 +29,6 @@
   </AppModuleRoleMaps>
   <LocalizedNames>
     <LocalizedName description="PACE Request App" languagecode="1033" />
+    <LocalizedName description="App de demande PACE" languagecode="1036" />
   </LocalizedNames>
 </AppModule>
