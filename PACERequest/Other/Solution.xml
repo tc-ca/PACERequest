@@ -121,8 +121,8 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="bot" displayName="Chatbot" solution="PowerVirtualAgents (2.0.0.59)">
-          <package>msdynce_CustomerCareIntelligenceBots_Anchor (1.1.2.322)</package>
+        <Required type="1" schemaName="bot" displayName="Chatbot" solution="PowerVirtualAgents (2.0.0.87)">
+          <package>msdynce_CustomerCareIntelligenceBots_Anchor (2.0.0.87)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
