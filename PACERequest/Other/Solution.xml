@@ -152,7 +152,7 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="siteid" displayName="Site" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_Service (9.0.5.56)">
-          <package>msdynce_ServiceAnchor (9.0.21041.1018)</package>
+          <package>msdynce_ServiceAnchor (9.0.21101.1015)</package>
         </Required>
         <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
       </MissingDependency>
