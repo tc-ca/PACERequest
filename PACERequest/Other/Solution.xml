@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.21094.124" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.21101.126" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>PACERequest</UniqueName>
     <LocalizedNames>
@@ -117,7 +117,7 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.1.21093.210915002)" />
+        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.1.21095.210928001)" />
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
