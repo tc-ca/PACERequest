@@ -7,7 +7,7 @@
       <LocalizedName description="App de demande PACE" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.1.0.34</Version>
+    <Version>1.2.0.34</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>pacerequest</UniqueName>
@@ -87,7 +87,6 @@
       <RootComponent type="1" schemaName="apt_requestorprogram" behavior="0" />
       <RootComponent type="1" schemaName="apt_requesttype" behavior="0" />
       <RootComponent type="1" schemaName="new_userrequestprocess" behavior="0" />
-      <RootComponent type="1" schemaName="systemuser" behavior="0" />
       <RootComponent type="9" schemaName="apt_justificationchoice" behavior="0" />
       <RootComponent type="9" schemaName="apt_justificationchoicefr" behavior="0" />
       <RootComponent type="9" schemaName="apt_preferredlanguage" behavior="0" />
@@ -111,173 +110,8 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="admin_connector" displayName="PowerApps Connector" solution="CenterofExcellenceCoreComponents (3.39)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="admin_maker" displayName="Maker" solution="CenterofExcellenceCoreComponents (3.39)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="admin_powerplatformuser" displayName="Power Platform User" solution="CenterofExcellenceCoreComponents (3.39)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="adx_webformsession" displayName="Web Form Session" solution="MicrosoftPortalWebForms (9.3.2201.2)">
-          <package>CDSBasePortal (9.3.2201.22)</package>
-          <package>StarterPortal (9.2.2006.10)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.1.22034.220322001)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="bot" displayName="Chatbot" solution="PowerVirtualAgents (2.0.0.175)">
-          <package>msdynce_CustomerCareIntelligenceBots_Anchor (2.0.0.175)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="da_staff" displayName="Staff" solution="Active" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentstatushistory" displayName="Agent Status history" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_assignmentmap" displayName="Assignment Map" solution="msdyn_SalesRouting (9.1.2206.1002)">
-          <package>msdynce_SalesInsightsAnchor (9.0.22062.10003)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_customeremailcommunication" displayName="Customer email communication" solution="SICommon (9.0.2.3175)">
-          <package>msdynce_SalesInsightsAnchor (9.0.22062.10003)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_duplicateleadmapping" displayName="Duplicate Lead Mapping" solution="msdyn_leadhygiene (9.1.2206.1002)">
-          <package>msdynce_SalesInsightsAnchor (9.0.22062.10003)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_forecast" displayName="Forecast" solution="msdyn_Forecasting (9.0.22061.10000)">
-          <package>msdyn_SalesIntegrationsAddOns (9.0.22054.10002)</package>
-          <package>msdyn_SalesIntegrationsAddOns (9.0.22061.10002)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_liveworkstream" displayName="Workstream" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_ocliveworkitemparticipant" displayName="Live Work Item Participant (Deprecated)" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_ocruleitem" displayName="Rule Item" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_presence" displayName="Presence" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="10" schemaName="msdyn_msdyn_presence_systemuser" displayName="msdyn_msdyn_presence_systemuser" parentSchemaName="msdyn_presence" parentDisplayName="Presence" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2206.1002)">
-          <package>msdynce_SalesInsightsAnchor (9.0.22062.10003)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_sessionparticipant" displayName="Session participant" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_shareasconfiguration" displayName="ShareAs Configuration" solution="msdyn_Forecasting (9.0.22061.10000)">
-          <package>msdyn_SalesIntegrationsAddOns (9.0.22054.10002)</package>
-          <package>msdyn_SalesIntegrationsAddOns (9.0.22061.10002)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_swarmparticipant" displayName="Swarm participant" solution="msdyn_Swarming (9.0.22055.1006)">
-          <package>msdyn_ServiceExtendedAnchor (9.0.22055.1006)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_unifiedroutingrun" displayName="Routing diagnostic" solution="DecisionEngine (1.0.0.2233)">
-          <package>msdyn_ServiceExtendedAnchor (9.0.22055.1006)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msdyn_wallsavedqueryusersettings" displayName="Filter" solution="ActivityFeedsCore (9.0.0.0006)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msfp_survey" displayName="Customer Voice survey" solution="MicrosoftFormsPro (2.0.0.35)">
-          <package>MicrosoftFormsPro (2.0.0.35)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="usermobileofflineprofilemembership" displayName="UserMobileOfflineProfileMembership" solution="MobileOfflineMembership (1.0.0.2)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="10" schemaName="msdyn_msdyn_presence_systemuser" displayName="msdyn_msdyn_presence_systemuser" parentSchemaName="msdyn_presence" parentDisplayName="Presence" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="10" schemaName="msdyn_msdyn_presence_systemuser" displayName="msdyn_msdyn_presence_systemuser" parentSchemaName="msdyn_presence" parentDisplayName="Presence" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_presence" parentDisplayName="Presence" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="10" schemaName="msdyn_msdyn_presence_systemuser" displayName="msdyn_msdyn_presence_systemuser" parentSchemaName="msdyn_presence" parentDisplayName="Presence" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="msdyn_presenceid" displayName="Presence" parentSchemaName="msdyn_presence" parentDisplayName="Presence" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="10" schemaName="msdyn_msdyn_presence_systemuser" displayName="msdyn_msdyn_presence_systemuser" parentSchemaName="msdyn_presence" parentDisplayName="Presence" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="msdyn_defaultpresenceiduser" displayName="Default Presence" parentSchemaName="systemuser" parentDisplayName="User" solution="OmnichannelBase (1.5.0.5689)" />
-        <Dependent type="10" schemaName="msdyn_msdyn_presence_systemuser" displayName="msdyn_msdyn_presence_systemuser" parentSchemaName="msdyn_presence" parentDisplayName="Presence" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="siteid" displayName="Site" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_Service (9.0.5.56)">
-          <package>msdynce_ServiceAnchor (9.0.22062.1009)</package>
-        </Required>
-        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="territoryid" displayName="Territory" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_AppCommon (9.0.4.0066)">
-          <package>msdynce_AppCommonAnchor (9.0.22061.10001)</package>
-        </Required>
-        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0006)" />
-        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="apt_PACERequest" displayName="PACE Request App" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0006)" />
-        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="connectionreference" displayName="new_sharedoffice365groups_5e8cf" solution="Active" id.connectionreferencelogicalname="new_sharedoffice365groups_5e8cf" />

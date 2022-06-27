@@ -314,35 +314,6 @@
       </Descriptions>
     </RelationshipDescription>
   </EntityRelationship>
-  <EntityRelationship Name="msdyn_systemuser_msdyn_omnichannelqueue">
-    <EntityRelationshipType>ManyToMany</EntityRelationshipType>
-    <IntroducedVersion>1.0.0.0</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <FirstEntityName>SystemUser</FirstEntityName>
-    <SecondEntityName>msdyn_omnichannelqueue</SecondEntityName>
-    <IntersectEntityName>msdyn_systemuser_msdyn_omnichannelqueue</IntersectEntityName>
-    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <EntityRelationshipRoles>
-      <EntityRelationshipRole>
-        <NavPaneDisplayOption>DoNotDisplay</NavPaneDisplayOption>
-        <NavigationPropertyName>msdyn_systemuser_msdyn_omnichannelqueue</NavigationPropertyName>
-        <CustomLabels>
-          <CustomLabel description="" languagecode="1033" />
-          <CustomLabel description="" languagecode="1036" />
-        </CustomLabels>
-        <AssociationRoleOrdinal>1</AssociationRoleOrdinal>
-      </EntityRelationshipRole>
-      <EntityRelationshipRole>
-        <NavPaneDisplayOption>DoNotDisplay</NavPaneDisplayOption>
-        <NavigationPropertyName>msdyn_systemuser_msdyn_omnichannelqueue</NavigationPropertyName>
-        <CustomLabels>
-          <CustomLabel description="" languagecode="1033" />
-          <CustomLabel description="" languagecode="1036" />
-        </CustomLabels>
-        <AssociationRoleOrdinal>2</AssociationRoleOrdinal>
-      </EntityRelationshipRole>
-    </EntityRelationshipRoles>
-  </EntityRelationship>
   <EntityRelationship Name="user_apt_environments">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
