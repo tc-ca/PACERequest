@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{84f9d5ab-042d-4f33-a8cf-2a2981720e37}</savedqueryid>
+    <layoutxml>
+      <grid preview="1" icon="1" select="1" jump="apt_name" name="resultset">
+        <row id="apt_requestid" name="result">
+          <cell name="apt_name" width="300" />
+          <cell name="apt_requestorprogram" width="100" />
+          <cell name="apt_typeofrequest" width="160" />
+          <cell name="apt_requeststatus" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="apt_request">
+          <attribute name="apt_requestid" />
+          <attribute name="apt_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" value="0" operator="eq" />
+          </filter>
+          <attribute name="apt_typeofrequest" />
+          <order descending="true" attribute="createdon" />
+          <attribute name="apt_requestorprogram" />
+          <attribute name="apt_requeststatus" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Requests" languagecode="1033" />
+      <LocalizedName description="Demandes actives" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

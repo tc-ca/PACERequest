@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{392ecc54-29ea-42b2-9681-c8d5c2d40238}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab id="{0a052f8c-64e2-443c-8941-a35a95f8a463}" verticallayout="true" IsUserDefined="1" name="SecGeneral">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Généralités" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{e85467bf-c3e2-453f-abcf-1d56f421046b}" IsUserDefined="0" showlabel="false" showbar="false" visible="true" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Généralités" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cf28f773-378d-4281-be1a-c6c4e57b2207}" locklevel="0">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                          <label description="Créé par" languagecode="1036" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                      <cell id="{78692745-c163-45b8-8854-c3b28b6024b6}" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                          <label description="Créé le" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6bc84cff-3143-4436-bb09-2c922f37539f}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="apt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="apt_name" />
+                      </cell>
+                      <cell id="{d429acfc-24df-4143-8b31-a471f75b397e}" locklevel="0">
+                        <labels>
+                          <label description="Request Status" languagecode="1033" />
+                          <label description="État de la demande" languagecode="1036" />
+                        </labels>
+                        <control id="apt_requeststatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="apt_requeststatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dda772cf-24a2-4c2f-9a52-f7e29072cc89}" locklevel="0">
+                        <labels>
+                          <label description="Request Type" languagecode="1033" />
+                          <label description="Type de demande" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_requesttype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="apt_requesttype" />
+                      </cell>
+                      <cell id="{b25e1d25-ceb5-4397-b962-e714f46ee06a}" locklevel="0">
+                        <labels>
+                          <label description="Requestor Program" languagecode="1033" />
+                          <label description="Programme du demandeur" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_requestorprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="apt_requestorprogram" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{71e0a255-de5f-4684-aa92-952656b720da}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="License request type" languagecode="1033" />
+                          <label description="Type de demande de licence" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_licenserequesttype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="apt_licenserequesttype" uniqueid="{02076712-aa69-6d71-559d-b7550c09e974}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{685B7EA3-29F6-4392-B4C3-15DCF8BFAFC4}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{c50746fd-cb17-49b6-87f6-dd4c02f2f7b3}" locklevel="0" showlabel="true" visible="false">
+                        <labels>
+                          <label description="Other programs" languagecode="1033" />
+                          <label description="Autres programmes" languagecode="1036" />
+                        </labels>
+                        <control id="apt_otherprograms" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_otherprograms" disabled="false" uniqueid="{d9c6ea29-4954-4eb9-aee2-7a650e6853d3}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6691dd49-16de-4349-9bd1-1a6407631b9a}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Number of licenses required" languagecode="1033" />
+                          <label description="Nombre de licences nécessaires" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_numberoflicensesrequired" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_numberoflicensesrequired" uniqueid="{73bd7dce-2c80-e1a4-2a02-832a2b7667c2}" />
+                      </cell>
+                      <cell id="{c7cae9c7-18d6-43f3-a496-df04e06cbd04}" locklevel="0" rowspan="4" showlabel="true" visible="false">
+                        <labels>
+                          <label description="Licensee" languagecode="1033" />
+                          <label description="Titulaire de licence" languagecode="1036" />
+                        </labels>
+                        <control id="apt_licensee" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="apt_licensee" disabled="false" uniqueid="{c4b8253b-4752-57a5-553d-44d7db66575e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5991f71c-8a7d-4e0a-8271-5e351ac8a602}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="FPC justifications" languagecode="1033" />
+                          <label description="Justifications FPC" languagecode="1036" />
+                        </labels>
+                        <control id="apt_justifications" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="apt_justifications" disabled="false" uniqueid="{c10be892-9ba3-e9c7-3355-94767d9c2b2b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{0f4e53cd-c530-4a21-b8b3-cec1c63257d4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{e7c07325-b51d-4c7f-bfab-98acb2ac78f6}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{e328b926-e8e2-473d-a8cd-622e099c5c24}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{531c47f8-ecbd-45f5-aa60-6c7d5fd78a4c}" locklevel="0" rowspan="4" visible="false">
+                        <labels>
+                          <label description="Deleted user" languagecode="1033" />
+                          <label description="Utilisateur supprimé" languagecode="1036" />
+                        </labels>
+                        <control id="apt_deleteduser" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="apt_deleteduser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{38568a7a-5f54-4172-9a4f-10dc52cd9cae}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{da5fbb81-a2dc-41bf-a13b-f957475d7756}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{b4bb20a1-53cc-4a0f-9e73-a10ef81e7367}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{621e6d9c-9f1e-46d3-80bb-c3d700aaddb2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{e97de1f6-0f84-476f-ac7d-e5edf7b4a00f}" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Environments" languagecode="1033" />
+                          <label description="Environnements" languagecode="1036" />
+                        </labels>
+                        <control id="apt_environments" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_environments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{5fadf1f3-c4c5-4594-a4c4-166229396d85}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{7a1f7142-b069-4e13-88f9-b123f7109b8b}" locklevel="0" rowspan="4" visible="false">
+                        <labels>
+                          <label description="Name of Environment" languagecode="1033" />
+                          <label description="Nom de l'environnement" languagecode="1036" />
+                        </labels>
+                        <control id="apt_nameofenvironment" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="apt_nameofenvironment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{f3c38798-e465-46b2-9cf0-5346b7fff2c1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{b3c345c3-e99c-4a80-a66b-95a35abf2929}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{aa285a26-934c-45f9-b9f7-daeeab31eb3d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{568a0860-bba9-4ba1-92c8-0abebff4fa45}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{8fbfa027-0d34-4e53-b159-26074f8a92e0}" locklevel="0" visible="false" rowspan="4">
+                        <labels>
+                          <label description="Training" languagecode="1033" />
+                          <label description="Formation" languagecode="1036" />
+                        </labels>
+                        <control id="apt_training" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="apt_training" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{c901eb41-cbb9-47aa-8777-0f9d662ea976}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{aa331f66-aa69-4432-898a-b3a187ad6d1d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{2f36b21e-c4d2-4a19-9d59-7564330cf6f6}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{8da2161f-f620-4637-bb32-2bcb991b6884}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{28f9ec09-b445-497f-a67d-ffb62e710782}" locklevel="0" rowspan="4" visible="false">
+                        <labels>
+                          <label description="Project information" languagecode="1033" />
+                          <label description="Renseignements sur le projet" languagecode="1036" />
+                        </labels>
+                        <control id="apt_projectinformation" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="apt_projectinformation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{0e70b2db-84e9-47f4-8f40-dc9c5f8f7d69}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{4940848f-7b65-4567-b63f-8acdfc3ecf5f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{057e5876-ae24-437b-8809-014b0a70d88d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{710bbb74-8ea1-4765-b3f2-e94727a3e7b7}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{347e752b-fcb4-4d6c-934d-94430fc09dc8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="e6788556-acd3-4b3e-9d74-cfe6a7bcddf9" name="tab_2" IsUserDefined="0" showlabel="true" locklevel="0">
+          <labels>
+            <label description="Notes &amp; Attachments" languagecode="1033" />
+            <label description="Notes et pièces jointes" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="7e968404-9887-4941-9e33-af082e79a8b3" name="tab_2_section_1" IsUserDefined="0" showlabel="true" showbar="false" locklevel="0" celllabelposition="Left" labelwidth="115" celllabelalignment="Left" layout="varwidth" columns="1">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                    <label description="Nouvelle section" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c62bd638-cfb4-462d-bfab-8c3b772c639a}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{595a269c-d41d-b04a-ad18-ea88acd4ed27}" showlabel="true" auto="false" rowspan="15" colspan="1">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                          <label description="Texte de la note" languagecode="1036" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{fdb0ffb1-4d05-4b9e-99c1-c06a6a36492c}" celllabelposition="Top" labelwidth="115" celllabelalignment="Left" columns="111">
+        <rows>
+          <row>
+            <cell id="{37c83808-19e1-4953-9670-fb9d12047599}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6d451743-5207-4382-86ba-66c3ad1f8a96}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5761b6cd-0ec7-488d-8a47-85d3b9329c0e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{369b8308-9657-45b5-9f31-b8216e7f718c}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{52c1d217-88c6-4bee-ba28-9f551f7fbc3c}" celllabelposition="Top" labelwidth="115" celllabelalignment="Left" columns="111">
+        <rows>
+          <row>
+            <cell id="{31171415-9b49-4ed1-b31a-fc8275225a6b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{55b72e8c-527a-4226-b073-8a8192e2dc1b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8bf26648-b0da-4f27-839b-57ae3f4af1a0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions FallbackForm="true" Order="0">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+      <Description description="Un formulaire pour cette entité." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="apt_justificationchoice" localizedName="Justification choice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.14</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Justification choice" languagecode="1033" />
+    <displayname description="Choix de la justification" languagecode="1036" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="921210001">
+      <labels>
+        <label description="Project Service Automation" languagecode="1033" />
+        <label description="Automatisation des services de projets" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="921210002">
+      <labels>
+        <label description="Field Service" languagecode="1033" />
+        <label description="Field Service" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="921210003">
+      <labels>
+        <label description="Customer Service Enterprise" languagecode="1033" />
+        <label description="Service aux clients - Entreprise" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>
