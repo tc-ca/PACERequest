@@ -7,7 +7,7 @@
       <LocalizedName description="App de demande PACE" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.2.0.34</Version>
+    <Version>1.3.0.34</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>pacerequest</UniqueName>
@@ -112,14 +112,6 @@
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="apt_PACERequest" displayName="PACE Request App" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="connectionreference" displayName="new_sharedoffice365groups_5e8cf" solution="Active" id.connectionreferencelogicalname="new_sharedoffice365groups_5e8cf" />
-        <Dependent type="29" displayName="Auto Assign PPU License" id="{97fadc2e-70f4-eb11-94ef-000d3a09c1a8}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="connectionreference" displayName="si_sharedcommondataserviceforapps_9977a" solution="Active" id.connectionreferencelogicalname="si_sharedcommondataserviceforapps_9977a" />
-        <Dependent type="29" displayName="Auto Assign PPU License" id="{97fadc2e-70f4-eb11-94ef-000d3a09c1a8}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
