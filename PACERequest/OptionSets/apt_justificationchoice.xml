@@ -12,12 +12,6 @@
     <Description description="" languagecode="1033" />
   </Descriptions>
   <options>
-    <option value="921210000">
-      <labels>
-        <label description="Developer level activities" languagecode="1033" />
-        <label description="Activités de niveau développeur" languagecode="1036" />
-      </labels>
-    </option>
     <option value="921210001">
       <labels>
         <label description="Project Service Automation" languagecode="1033" />
