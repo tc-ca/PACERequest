@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e7b6fd9f-ff90-4a7b-bd45-a912a346e107}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab id="{0f03238f-e069-43da-94bf-de6561e62c87}" verticallayout="true" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Généralités" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{3bde05c2-6a03-47ae-974b-2b2eb2181e6f}" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Généralités" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f688c902-f7a3-49e5-afca-ddd5cb215b42}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="apt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="apt_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72726170-7e3f-4f90-a4e9-5abb3bc4bf51}" locklevel="0">
+                        <labels>
+                          <label description="Environment name" languagecode="1033" />
+                          <label description="Nom de l'environnement" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_environmentname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_environmentname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c17f537c-2a74-497e-96ed-c3783a21d2cd}" locklevel="0">
+                        <labels>
+                          <label description="Environment created by" languagecode="1033" />
+                          <label description="Environnement créé par" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_environmentcreatedby" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_environmentcreatedby" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{33495209-4549-4904-8adc-4c870f0ea230}" locklevel="0">
+                        <labels>
+                          <label description="Environment type" languagecode="1033" />
+                          <label description="Type d'environnement" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_environmenttype" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_environmenttype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7429a771-ea00-4074-bd82-5f2dd1eff211}" locklevel="0">
+                        <labels>
+                          <label description="Database usage (GB)" languagecode="1033" />
+                          <label description="Utilisation de la base de données (en Go)" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_databaseusagegb" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_databaseusagegb" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{33e5af96-9aba-46f6-acad-758369d66b2f}" locklevel="0">
+                        <labels>
+                          <label description="File usage (GB)" languagecode="1033" />
+                          <label description="Utilisation du fichier (en Go)" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_fileusagegb" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_fileusagegb" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b192a407-bdea-4492-87b0-4e8e7c732584}" locklevel="0">
+                        <labels>
+                          <label description="Log usage (GB)" languagecode="1033" />
+                          <label description="Utilisation du journal (en Go)" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_logusagegb" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_logusagegb" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1f4d60b7-70f0-4153-8317-866b523bf506}" locklevel="0">
+                        <labels>
+                          <label description="Total space (GB)" languagecode="1033" />
+                          <label description="Espace total (en Go)" languagecode="1036" />
+                        </labels>
+                        <control disabled="false" id="apt_totalspacegb" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="apt_totalspacegb" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{04613950-539a-488f-8f4a-0fec33c2b378}" celllabelposition="Top" labelwidth="115" celllabelalignment="Left" columns="111">
+        <rows>
+          <row>
+            <cell id="{c593aad1-2344-4b0d-8e9b-e97755361a84}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{813e9064-4adf-490b-acdc-0cbd23ef7583}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{12a0ef7e-0cd1-4525-98fa-e703793bbc6a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6be362dc-5a48-4267-b62b-84b2449a8f78}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{fd671365-1bcf-45ae-a9be-2bd9c80e38e0}" celllabelposition="Top" labelwidth="115" celllabelalignment="Left" columns="111">
+        <rows>
+          <row>
+            <cell id="{691a072a-ce6d-4cb2-9305-9a8d7e5651cb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{56ca60c2-a52a-41bf-810e-84ed8e055b3f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2dcf9a9e-9a3b-4deb-914c-5989bcf96394}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions FallbackForm="true" Order="0">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+      <Description description="Un formulaire pour cette entité." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

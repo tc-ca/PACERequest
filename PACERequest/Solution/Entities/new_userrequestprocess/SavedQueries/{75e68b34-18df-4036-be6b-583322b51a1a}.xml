@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{75e68b34-18df-4036-be6b-583322b51a1a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bpf_name" select="1" icon="1" preview="1">
+        <row name="result" id="businessprocessflowinstanceid">
+          <cell name="bpf_apt_requestid" width="300" />
+          <cell name="activestageid" width="150" />
+          <cell name="statuscode" width="150" />
+          <cell name="createdon" width="150" />
+          <cell name="processid" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_userrequestprocess">
+          <attribute name="businessprocessflowinstanceid" />
+          <attribute name="bpf_name" />
+          <attribute name="createdon" />
+          <attribute name="bpf_apt_requestid" />
+          <attribute name="activestageid" />
+          <attribute name="statecode" />
+          <attribute name="createdby" />
+          <attribute name="processid" />
+          <order attribute="bpf_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="apt_request" from="apt_requestid" to="bpf_apt_requestid" alias="bpfPrimaryEntity">
+            <filter type="and">
+              <condition attribute="ownerid" operator="eq-userid" />
+            </filter>
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active User Request Process on my Requests" languagecode="1033" />
+      <LocalizedName description="Processus de demande d'utilisateur actif dans mes demandes" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

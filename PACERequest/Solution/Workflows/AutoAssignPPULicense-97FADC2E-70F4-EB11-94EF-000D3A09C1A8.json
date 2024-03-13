@@ -1,0 +1,139 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365groups_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365groups_5e8cf"
+        },
+        "api": {
+          "name": "shared_office365groups"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "si_sharedcommondataserviceforapps_9977a"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "a3e9ffab-be25-497a-904e-4e76578d3508"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 1,
+              "subscriptionRequest/entityname": "apt_request",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filterexpression": "(_apt_requesttype_value eq 251b1990-be55-eb11-a812-000d3af39ed7)",
+              "subscriptionRequest/name": "97fadc2e-70f4-eb11-94ef-000d3a09c1a8"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "fd0a17cc-1295-46f1-aa11-da0e5f6a9527"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "UPNs",
+                "type": "array",
+                "value": "@split(triggerOutputs()?['body/apt_licensee'], ';')"
+              }
+            ]
+          }
+        },
+        "Apply_to_each": {
+          "foreach": "@variables('UPNs')",
+          "actions": {
+            "Add_member_to_group": {
+              "runAfter": {
+                "Remove_member_from_group": [
+                  "Succeeded",
+                  "Failed"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "01ee8911-e965-4aba-b1f8-75eb46e2d473"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_office365groups_1",
+                  "operationId": "AddMemberToGroup",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365groups"
+                },
+                "parameters": {
+                  "groupId": "ab0f071d-310f-4ea4-9451-86bcc4a88ea1",
+                  "userUpn": "@trim(items('Apply_to_each'))"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Remove_member_from_group": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "8a3f6c96-e64c-4871-ad11-0618976dca4e"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_office365groups_1",
+                  "operationId": "RemoveMemberFromGroup",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365groups"
+                },
+                "parameters": {
+                  "groupId": "ab0f071d-310f-4ea4-9451-86bcc4a88ea1",
+                  "userUpn": "@trim(items('Apply_to_each'))"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2d0c4521-6bfb-44e7-ac9a-606bd983d586"
+          },
+          "type": "Foreach"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

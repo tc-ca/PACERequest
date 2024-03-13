@@ -1,0 +1,243 @@
+<Activity x:Class="XrmWorkflowad81bd96ca30449491b0e7cb30629734" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mcwb="clr-namespace:Microsoft.Crm.Workflow.BusinessProcessFlowActivities;assembly=Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mcwo="clr-namespace:Microsoft.Crm.Workflow.ObjectModel;assembly=Microsoft.Crm, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+  </x:Members>
+  <this:XrmWorkflowad81bd96ca30449491b0e7cb30629734.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowad81bd96ca30449491b0e7cb30629734.InputEntities>
+  <this:XrmWorkflowad81bd96ca30449491b0e7cb30629734.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowad81bd96ca30449491b0e7cb30629734.CreatedEntities>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.BusinessProcessFlowActivities.StageRelationshipCollectionComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="RelationshipCollectionStep1">
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <Sequence DisplayName="RelationshipStep2">
+            <mcwb:StageRelationship AttributeName="apt_request" RelationshipName="apt_Request_apt_Request_apt_Inventory" SourceStageId="a8471401-23bb-4c28-b63f-de33dc004df7" TargetStageId="f7f3a844-2ec1-41ed-b5e9-b6dd5a69c4f6" />
+          </Sequence>
+        </sco:Collection>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EntityComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EntityStep3: apt_request">
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StageComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StageStep4: Request">
+            <mxswa:ActivityReference.Properties>
+              <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+              <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StepComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StepStep5: New Step">
+                  <mxswa:ActivityReference.Properties>
+                    <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                    <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                      <Sequence DisplayName="ControlStep6">
+                        <mcwb:Control ClassId="67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed" ControlDisplayName="Detail verification" ControlId="apt_detailverification" DataFieldName="apt_detailverification" IsSystemControl="False" IsUnbound="False" SystemStepType="0">
+                          <mcwb:Control.Parameters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </mcwb:Control.Parameters>
+                        </mcwb:Control>
+                      </Sequence>
+                    </sco:Collection>
+                    <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                      <mcwo:StepLabel Description="Verify details" LabelId="02ab16f7-1e32-44d4-8e75-5633065c9a58" LanguageCode="1033" />
+                    </sco:Collection>
+                    <x:String x:Key="ProcessStepId">02ab16f7-1e32-44d4-8e75-5633065c9a58</x:String>
+                    <x:Boolean x:Key="IsProcessRequired">True</x:Boolean>
+                  </mxswa:ActivityReference.Properties>
+                </mxswa:ActivityReference>
+                <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StepComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StepStep7: New Step">
+                  <mxswa:ActivityReference.Properties>
+                    <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                    <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                      <Sequence DisplayName="ControlStep8">
+                        <mcwb:Control ClassId="3ef39988-22bb-4f0b-bbbe-64b5a3748aee" ControlDisplayName="Request Status" ControlId="apt_requeststatus" DataFieldName="apt_requeststatus" IsSystemControl="False" IsUnbound="False" SystemStepType="0">
+                          <mcwb:Control.Parameters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </mcwb:Control.Parameters>
+                        </mcwb:Control>
+                      </Sequence>
+                    </sco:Collection>
+                    <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                      <mcwo:StepLabel Description="Change status to in progress" LabelId="54b0408e-3fa5-47d9-a52b-567bea333623" LanguageCode="1033" />
+                    </sco:Collection>
+                    <x:String x:Key="ProcessStepId">54b0408e-3fa5-47d9-a52b-567bea333623</x:String>
+                    <x:Boolean x:Key="IsProcessRequired">True</x:Boolean>
+                  </mxswa:ActivityReference.Properties>
+                </mxswa:ActivityReference>
+              </sco:Collection>
+              <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                <mcwo:StepLabel Description="Request" LabelId="23495beb-0b73-4635-ad2b-cc159a30cd2a" LanguageCode="1033" />
+              </sco:Collection>
+              <x:String x:Key="StageId">23495beb-0b73-4635-ad2b-cc159a30cd2a</x:String>
+              <x:String x:Key="StageCategory">-1</x:String>
+              <x:String x:Key="NextStageId">517b4b25-1eb5-48c2-a4b5-edd287a9b2a6</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+        </sco:Collection>
+        <x:Null x:Key="RelationshipName" />
+        <x:Null x:Key="AttributeName" />
+        <x:Boolean x:Key="IsClosedLoop">False</x:Boolean>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EntityComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EntityStep4: apt_request">
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StageComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StageStep10: Action">
+            <mxswa:ActivityReference.Properties>
+              <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+              <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StepComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StepStep11: New Step">
+                  <mxswa:ActivityReference.Properties>
+                    <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                    <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                      <Sequence DisplayName="ControlStep12">
+                        <mcwb:Control ClassId="67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed" ControlDisplayName="Item actioned" ControlId="apt_itemactioned" DataFieldName="apt_itemactioned" IsSystemControl="False" IsUnbound="False" SystemStepType="0">
+                          <mcwb:Control.Parameters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </mcwb:Control.Parameters>
+                        </mcwb:Control>
+                      </Sequence>
+                    </sco:Collection>
+                    <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                      <mcwo:StepLabel Description="Item actioned" LabelId="821c7c33-ff10-4553-a28f-0453ffd8e6a1" LanguageCode="1033" />
+                    </sco:Collection>
+                    <x:String x:Key="ProcessStepId">821c7c33-ff10-4553-a28f-0453ffd8e6a1</x:String>
+                    <x:Boolean x:Key="IsProcessRequired">True</x:Boolean>
+                  </mxswa:ActivityReference.Properties>
+                </mxswa:ActivityReference>
+              </sco:Collection>
+              <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                <mcwo:StepLabel Description="Action" LabelId="517b4b25-1eb5-48c2-a4b5-edd287a9b2a6" LanguageCode="1033" />
+              </sco:Collection>
+              <x:String x:Key="StageId">517b4b25-1eb5-48c2-a4b5-edd287a9b2a6</x:String>
+              <x:String x:Key="StageCategory">-1</x:String>
+              <x:String x:Key="NextStageId">a8471401-23bb-4c28-b63f-de33dc004df7</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+        </sco:Collection>
+        <x:Null x:Key="RelationshipName" />
+        <x:Null x:Key="AttributeName" />
+        <x:Boolean x:Key="IsClosedLoop">False</x:Boolean>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EntityComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EntityStep5: apt_request">
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StageComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StageStep14: Completed">
+            <mxswa:ActivityReference.Properties>
+              <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+              <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StepComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StepStep15: New Step">
+                  <mxswa:ActivityReference.Properties>
+                    <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                    <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                      <Sequence DisplayName="ControlStep16">
+                        <mcwb:Control ClassId="67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed" ControlDisplayName="Request complete" ControlId="apt_requestcomplete" DataFieldName="apt_requestcomplete" IsSystemControl="False" IsUnbound="False" SystemStepType="0">
+                          <mcwb:Control.Parameters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </mcwb:Control.Parameters>
+                        </mcwb:Control>
+                      </Sequence>
+                    </sco:Collection>
+                    <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                      <mcwo:StepLabel Description="Completed" LabelId="66593e0b-e411-4b71-841a-0fc0255c3c3f" LanguageCode="1033" />
+                    </sco:Collection>
+                    <x:String x:Key="ProcessStepId">66593e0b-e411-4b71-841a-0fc0255c3c3f</x:String>
+                    <x:Boolean x:Key="IsProcessRequired">True</x:Boolean>
+                  </mxswa:ActivityReference.Properties>
+                </mxswa:ActivityReference>
+                <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StepComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StepStep17: New Step">
+                  <mxswa:ActivityReference.Properties>
+                    <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                    <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                      <Sequence DisplayName="ControlStep18">
+                        <mcwb:Control ClassId="3ef39988-22bb-4f0b-bbbe-64b5a3748aee" ControlDisplayName="Request Status" ControlId="apt_requeststatus" DataFieldName="apt_requeststatus" IsSystemControl="False" IsUnbound="False" SystemStepType="0">
+                          <mcwb:Control.Parameters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </mcwb:Control.Parameters>
+                        </mcwb:Control>
+                      </Sequence>
+                    </sco:Collection>
+                    <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                      <mcwo:StepLabel Description="Change status to complete" LabelId="654b7aad-32b8-478a-9c5f-d2cb067dcac0" LanguageCode="1033" />
+                    </sco:Collection>
+                    <x:String x:Key="ProcessStepId">654b7aad-32b8-478a-9c5f-d2cb067dcac0</x:String>
+                    <x:Boolean x:Key="IsProcessRequired">True</x:Boolean>
+                  </mxswa:ActivityReference.Properties>
+                </mxswa:ActivityReference>
+              </sco:Collection>
+              <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                <mcwo:StepLabel Description="Completed" LabelId="a8471401-23bb-4c28-b63f-de33dc004df7" LanguageCode="1033" />
+              </sco:Collection>
+              <x:String x:Key="StageId">a8471401-23bb-4c28-b63f-de33dc004df7</x:String>
+              <x:String x:Key="StageCategory">-1</x:String>
+              <x:String x:Key="NextStageId">f7f3a844-2ec1-41ed-b5e9-b6dd5a69c4f6</x:String>
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+        </sco:Collection>
+        <x:Null x:Key="RelationshipName" />
+        <x:Null x:Key="AttributeName" />
+        <x:Boolean x:Key="IsClosedLoop">False</x:Boolean>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EntityComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EntityStep6: apt_inventory">
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StageComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StageStep20: Inventory">
+            <mxswa:ActivityReference.Properties>
+              <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+              <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.StepComposite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="StepStep21: New Step">
+                  <mxswa:ActivityReference.Properties>
+                    <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                    <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                      <Sequence DisplayName="ControlStep22">
+                        <mcwb:Control ClassId="4273edbd-ac1d-40d3-9fb2-095c621b552d" ControlDisplayName="Number of Licenses" ControlId="apt_numberoflicenses" DataFieldName="apt_numberoflicenses" IsSystemControl="False" IsUnbound="False" SystemStepType="0">
+                          <mcwb:Control.Parameters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </mcwb:Control.Parameters>
+                        </mcwb:Control>
+                      </Sequence>
+                    </sco:Collection>
+                    <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                      <mcwo:StepLabel Description="Number of Licenses" LabelId="abf94b64-48f4-43a9-a2f3-26937bf02964" LanguageCode="1033" />
+                    </sco:Collection>
+                    <x:String x:Key="ProcessStepId">abf94b64-48f4-43a9-a2f3-26937bf02964</x:String>
+                    <x:Boolean x:Key="IsProcessRequired">False</x:Boolean>
+                  </mxswa:ActivityReference.Properties>
+                </mxswa:ActivityReference>
+              </sco:Collection>
+              <sco:Collection x:TypeArguments="mcwo:StepLabel" x:Key="StepLabels">
+                <mcwo:StepLabel Description="Inventory" LabelId="f7f3a844-2ec1-41ed-b5e9-b6dd5a69c4f6" LanguageCode="1033" />
+              </sco:Collection>
+              <x:String x:Key="StageId">f7f3a844-2ec1-41ed-b5e9-b6dd5a69c4f6</x:String>
+              <x:String x:Key="StageCategory">-1</x:String>
+              <x:Null x:Key="NextStageId" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+        </sco:Collection>
+        <x:Null x:Key="RelationshipName" />
+        <x:Null x:Key="AttributeName" />
+        <x:Boolean x:Key="IsClosedLoop">False</x:Boolean>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+  </mxswa:Workflow>
+</Activity>

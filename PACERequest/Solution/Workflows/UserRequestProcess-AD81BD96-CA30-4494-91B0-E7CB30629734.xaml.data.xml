@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{ad81bd96-ca30-4494-91b0-e7cb30629734}" Name="User Request Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/UserRequestProcess-AD81BD96-CA30-4494-91B0-E7CB30629734.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>new_userrequestprocess</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>apt_Request</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="User Request Process" />
+    <LocalizedName languagecode="1036" description="Processus de demande d'utilisateur" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{23495beb-0b73-4635-ad2b-cc159a30cd2a}">
+      <label languagecode="1033" description="Request" />
+      <label languagecode="1036" description="Demande" />
+    </steplabels>
+    <steplabels id="{02ab16f7-1e32-44d4-8e75-5633065c9a58}">
+      <label languagecode="1033" description="Verify details" />
+      <label languagecode="1036" description="Vérifier les détails" />
+    </steplabels>
+    <steplabels id="{54b0408e-3fa5-47d9-a52b-567bea333623}">
+      <label languagecode="1033" description="Change status to in progress" />
+      <label languagecode="1036" description="Modifier l'état à En cours" />
+    </steplabels>
+    <steplabels id="{517b4b25-1eb5-48c2-a4b5-edd287a9b2a6}">
+      <label languagecode="1033" description="Action" />
+      <label languagecode="1036" description="Mesure" />
+    </steplabels>
+    <steplabels id="{821c7c33-ff10-4553-a28f-0453ffd8e6a1}">
+      <label languagecode="1033" description="Item actioned" />
+      <label languagecode="1036" description="Mesure prise" />
+    </steplabels>
+    <steplabels id="{a8471401-23bb-4c28-b63f-de33dc004df7}">
+      <label languagecode="1033" description="Completed" />
+      <label languagecode="1036" description="Terminé" />
+    </steplabels>
+    <steplabels id="{66593e0b-e411-4b71-841a-0fc0255c3c3f}">
+      <label languagecode="1033" description="Completed" />
+      <label languagecode="1036" description="Terminé" />
+    </steplabels>
+    <steplabels id="{654b7aad-32b8-478a-9c5f-d2cb067dcac0}">
+      <label languagecode="1033" description="Change status to complete" />
+      <label languagecode="1036" description="Modifier l'état à Terminé" />
+    </steplabels>
+    <steplabels id="{f7f3a844-2ec1-41ed-b5e9-b6dd5a69c4f6}">
+      <label languagecode="1033" description="Inventory" />
+      <label languagecode="1036" description="Inventaire" />
+    </steplabels>
+    <steplabels id="{abf94b64-48f4-43a9-a2f3-26937bf02964}">
+      <label languagecode="1033" description="Number of Licenses" />
+      <label languagecode="1036" description="Nombre de licences" />
+    </steplabels>
+  </labels>
+</Workflow>
