@@ -16,6 +16,13 @@
   <EntityDataProviders />
   <CanvasApps />
   <connectionreferences>
+    <connectionreference connectionreferencelogicalname="apt_sharedoffice365_44b50">
+      <connectionreferencedisplayname>Office 365 Outlook PACERequest-44b50</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
     <connectionreference connectionreferencelogicalname="apt_sharedoffice365_c6e3e">
       <connectionreferencedisplayname>Office 365 Outlook</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>

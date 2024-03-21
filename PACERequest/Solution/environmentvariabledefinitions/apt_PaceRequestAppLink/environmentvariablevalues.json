@@ -1,0 +1,9 @@
+{
+  "environmentvariablevalues": {
+    "environmentvariablevalue": {
+      "@environmentvariablevalueid": "6e49195c-f4e6-ee11-a203-6045bdf99f3d",
+      "iscustomizable": "1",
+      "value": "https://pace-dev-tcd365.crm3.dynamics.com/main.aspx?appid=ed594768-be6e-4525-8069-8aeafcff48d7"
+    }
+  }
+}

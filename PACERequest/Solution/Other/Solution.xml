@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24024.178" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.24031.170" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>PACERequest</UniqueName>
     <LocalizedNames>
@@ -7,7 +7,7 @@
       <LocalizedName description="App de demande PACE" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.1.0.0</Version>
+    <Version>1.2.0.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>pacerequest</UniqueName>
@@ -91,13 +91,12 @@
       <RootComponent type="20" id="{fb40fd3b-cb1b-ec11-b6e7-000d3a09e7ae}" behavior="0" />
       <RootComponent type="29" id="{019df2b6-7777-eb11-a812-000d3af3d106}" behavior="0" />
       <RootComponent type="29" id="{371dc9f9-ef6a-eb11-a812-000d3a84106a}" behavior="0" />
-      <RootComponent type="29" id="{568a5ea2-9b77-eb11-a812-000d3af3d106}" behavior="0" />
-      <RootComponent type="29" id="{56ea0c88-3c28-eb11-a813-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{5b9da1ca-25ea-eb11-bacb-000d3af4fe47}" behavior="0" />
       <RootComponent type="29" id="{72e49fe6-f0ee-eb11-94ef-000d3af4f17d}" behavior="0" />
       <RootComponent type="29" id="{89bf61cb-e9ee-eb11-94ef-000d3af4f17d}" behavior="0" />
       <RootComponent type="29" id="{905b9a89-edee-eb11-94ef-000d3af4f17d}" behavior="0" />
       <RootComponent type="29" id="{97fadc2e-70f4-eb11-94ef-000d3a09c1a8}" behavior="0" />
+      <RootComponent type="29" id="{9d0bcc78-d0e6-ee11-a203-6045bdcd5ed3}" behavior="0" />
       <RootComponent type="29" id="{ad81bd96-ca30-4494-91b0-e7cb30629734}" behavior="0" />
       <RootComponent type="29" id="{c9647d4f-efee-eb11-94ef-000d3af4f17d}" behavior="0" />
       <RootComponent type="29" id="{ce53ab36-d5d9-eb11-bacb-000d3a09cd86}" behavior="0" />
@@ -111,6 +110,14 @@
       <RootComponent type="9" schemaName="apt_requeststatus" behavior="0" />
     </RootComponents>
     <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="environmentvariabledefinition" displayName="Environment Variable Definition" solution="EnvironmentVariables (1.0.2.293)" />
+        <Dependent type="300" schemaName="new_pacerequest2_4d8cb" displayName="Power Apps Centre of Excellence Request Form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="environmentvariablevalue" displayName="Environment Variable Value" solution="EnvironmentVariables (1.0.2.293)" />
+        <Dependent type="300" schemaName="new_pacerequest2_4d8cb" displayName="Power Apps Centre of Excellence Request Form" />
+      </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="apt_PACERequest" displayName="PACE Request App" />

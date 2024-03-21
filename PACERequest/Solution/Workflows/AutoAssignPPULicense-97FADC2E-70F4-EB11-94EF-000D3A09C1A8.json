@@ -49,8 +49,7 @@
               "subscriptionRequest/message": 1,
               "subscriptionRequest/entityname": "apt_request",
               "subscriptionRequest/scope": 4,
-              "subscriptionRequest/filterexpression": "(_apt_requesttype_value eq 251b1990-be55-eb11-a812-000d3af39ed7)",
-              "subscriptionRequest/name": "97fadc2e-70f4-eb11-94ef-000d3a09c1a8"
+              "subscriptionRequest/filterexpression": "(_apt_requesttype_value eq 251b1990-be55-eb11-a812-000d3af39ed7)"
             },
             "authentication": "@parameters('$authentication')"
           }
@@ -129,6 +128,30 @@
             "operationMetadataId": "2d0c4521-6bfb-44e7-ac9a-606bd983d586"
           },
           "type": "Foreach"
+        },
+        "Mark_request_as_completed": {
+          "runAfter": {
+            "Apply_to_each": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "1447c83f-61ef-4fee-887d-25255b2c64a5"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "apt_requests",
+              "recordId": "@triggerOutputs()?['body/apt_requestid']",
+              "item/apt_requeststatus": 921210002
+            },
+            "authentication": "@parameters('$authentication')"
+          }
         }
       },
       "outputs": {}
